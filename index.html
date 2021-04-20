@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,11 +15,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Redressed&family=Shippori+Mincho:wght@600&family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 <link  href="http://fonts.googleapis.com/css?family=Cabin:400,500,600,bold" rel="stylesheet" type="text/css" >
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 <link  href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold" rel="stylesheet" type="text/css" >
 
-<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <link rel="stylesheet" href="style.css">
 
     <title>Home</title>
@@ -58,54 +57,93 @@
           
         </ul>
         <form class="d-flex ms-3" >
-          <input class="form-control me-2 w-50 ms-5" type="search" placeholder="Search " aria-label="Search" style=" border: none;border-bottom:2px #eeff00 solid;background-color: transparent;">
+          <input class="form-control me-2 w-50 ms-5" type="search" placeholder="Search " aria-label="Search" id="search">
          </form>
          <div style="display:flex;justify-content: space-evenly;">
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" style="color: red;margin-left:3rem; margin-top:3px;" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
           </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="color: white;margin-left:2rem;" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+         <a href="shop.html"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="color: white;margin-left:2rem;" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-          </svg>  
-          <a href="shop.html">   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="color: #eeff00; margin-left:2rem; cursor:pointer;" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-          </svg> <span id="spana">0</span></a>
-        </div>
-      </div>
-    </div>
+          </svg>  </a>
+      
+          <a id="myBtn" class="add" onclick="buttonClick()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" style="color:#eeff00; margin-left:2rem;" class="bi bi-cart" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg> <span id="spana" > 0</span>
+          </a>
+
+<!-- The Modal -->
+<div id="myModal" class="modal" style="overflow-y: scroll;">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="background-color: #000000;">
+    <span class="close"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" style="color: #eeff00;" fill="currentColor" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
+      <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+    </svg></span> 
+  </div>
+
+  <div class="table-responsive" style="background-color:black; overflow-x: hidden; " >
+    <table class="table table-striped table-hover display:flex;flex-direction:clumn; ">
+      <thead >
+        <tr style="text-decoration: none; display: flex; flex-direction:row;justify-content: space-around;color:#000000; margin-left: 1rem; background-color:#000000;">
+          <th style="text-decoration: none; background-color:#000000; color:#000000;" ></th>
+          <th style="text-decoration: none; background-color:#000000; color:#000000;" ></th>
+          <th style="text-decoration: none; background-color:#000000; color:#000000;" >  </th>
+          <th style="text-decoration: none; background-color:#000000; color:#000000;" ></th>
+          <th style="text-decoration: none; background-color:#000000; color:#000000;"  id="total-price"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tbody class="container products">
+          <tr class="row" style="display: flex;justify-content: space-around;">
+            <td style="width: 10%; height:10%" class="col-md-2"></td>
+            <td class="col-md-1"></td>
+            <td class="col-md-1">
+              
+            </td>
+            <td class="col-md-2"></td>
+           <td>
+           
+           </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>  
+</div>
+  
+
   </nav>
 
-
+<script>
+  function buttonClick(){
+  var textBox = document.getElementById("spana");
+  textBox.innerHTML = textBox.value++;
+  console.log(textBox.innerHTML);
+}</script>
   <!-------------------------------------image and titre------------------------------------>
 
 
   <main>
     
-  <section id="nono" style="color: white;">
+  <section >  
     <div class="vio">
-<video src="nww.mp4" autoplay muted loop id="vid">     </div>
+<video src="nww.mp4" autoplay muted loop id="vid">    
 </video></div>
- 
+ <div class="centered text-white" >  <span id="span">G</span> <span > .n . v.</span>  <span id="span">l</span> <br> 
+  <p id="slog">We are the best.</p>  <button class="west">Shop Now</button> </div>
+ <br><br><br><br><br><br>
+ <br><br><br><br><br><br>
+ <br><br><br><br><br><br>
+ <br><br><br><br><br><br>
+<br><br>
+</section>
 
-<div class="centered" >  <span id="span">G</span> <span id="h1"> .n . v.</span>  <span id="span">l</span> <br> <p style="font-size: 19px; margin-left: 20rem; margin-top: -20px; color: #000; ">We are the best.</p>  <button class="west">Shop Now</button> </div>
-<br><br><br><br><br><br>
-      <br><br><br><br><br><br>
-      <br><br><br><br><br><br>
-      <br><br><br><br><br><br>
-      <br>
-      <br>
 
-
-    </section>
+    <!-----------------------------------------2 and for who------------------------------->
     
-    <!-----------------------------------filter-------------------------------------->
-
-
-
-    <!-----------------------------------------software courses------------------------------->
-    
-    <section style=" margin-bottom: -30px;">
+    <section >
 <b></b>
       <h2 id="h2" class="mt-5" >Bring the Future To The light</h2>
       <div class="first-btn"><button class="west-2">shop</button><button class="west-2">explore</button></div>
@@ -131,7 +169,7 @@
 </section>
 <!-----------------------------------------devlopment courses------------------------------>
 
-<section style="margin-top: -50px;"> 
+<section > 
 
   <h2 id="h2" >Featured Marks</h2>
 
@@ -153,46 +191,46 @@
       </li>
      
   </ul>
-  <div class="tab-content" id="pills-tabContent">
+  <div class="tab-content " id="pills-tabContent"> 
     <div class="tab-pane fade show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-        <div class="container mt-5">
+        <div class="container mt-5" id="products">
 <div class="row mt-5">
 <div class="col-md-3"><div class="card">
-  <img src="slv2.jpg" alt="kach" style="width: 100%;" class="img-fluid sho" >
-  <h1 class="cn">Louis vuitton</h1>
-  <p style="color: rgb(128, 127, 127);">New Expensive Jacket from louis vuitton</p>
+  <img src="slv2.jpg" alt="kach" style="width: 100%;" class="card-img-top img-card" >
+  <h1 class="card-title title text-white  text-white">Louis vuitton</h1>
+  <p class="desc">New Expensive Jacket from louis vuitton</p>
  
   <p class="price">319.99</p>
  
-  <button class="add-to">Add to Cart</button>
+  <button class="add" onclick="buttonClick()">Add to Cart</button>
 </div>
 </div>
 <div class="col-md-3"><div class="card">
-  <img src="slv.jpg" style="width:100% ;" class="img-fluid sho"  >
-  <h1 class="cn">Lv Jacket</h1>
-  <p style="color: rgb(128, 127, 127);">New Expensive Jacket from <br> Gucci</p>
+  <img src="slv.jpg" style="width:100% ;" class="card-img-top img-card"  >
+  <h1 class="card-title title text-white">Lv Jacket</h1>
+  <p  class="desc">New Expensive Jacket from <br> Gucci</p>
  
   <p class="price">$724.99</p>
  
- <button class="add-to">Add to Cart</button>
+ <button class="add" onclick="buttonClick()">Add to Cart</button>
 </div>
 </div>    <div class="col-md-3"><div class="card">
-  <img src="bag.jpg" alt="kach" style="width:99%" class="img-fluid sho" style="margin-left: 10px;">
-  <h1 class="cn">Lv Bag</h1>
-  <p style="color: rgb(128, 127, 127);">New Expensive Jacket from Versace</p>
+  <img src="bag.jpg" alt="kach" style="width:99%" class="card-img-top img-card" style="margin-left: 10px;">
+  <h1 class="card-title title text-white">Lv Bag</h1>
+  <p  class="desc">New Expensive Jacket from Versace</p>
  
   <p class="price">$399.99</p>
  
- <button class="add-to">Add to Cart</button>
+ <button class="add" onclick="buttonClick()">Add to Cart</button>
 </div>
 </div>    <div class="col-md-3"><div class="card">
-  <img src="vl.jpg" alt="kach" style="width:100% ; " class="img-fluid sho" >
-  <h1 class="cn">Swaggy Lv</h1>
-  <p style="color: rgb(128, 127, 127);">New Expensive Jacket from <br> Nike</p>
+  <img src="vl.jpg" alt="kach" style="width:100% ; " class="card-img-top img-card" >
+  <h1 class="card-title title text-white">Swaggy Lv</h1>
+  <p  class="desc">New Expensive Jacket from <br> Nike</p>
  
   <p class="price">$929.86</p>
  
-<button class="add-to">Add to Cart</button>
+<button class="add" onclick="buttonClick()">Add to Cart</button>
 </div>
 </div>
 </div>
@@ -206,41 +244,41 @@
         <div class="container mt-5">
 <div class="row mt-5">
 <div class="col-md-3"><div class="card">
-  <img src="gs.jpg" alt="kach" style="width: 100%;"class="img-fluid sho" >
-  <h1 class="cn" >Gucci</h1>
-  <p style="color: rgb(128, 127, 127);">New Expensive Jacket from louis vuitton</p>
+  <img src="gs.jpg" alt="kach" style="width: 100%;"class="card-img-top img-card" >
+  <h1 class="card-title title text-white" >Gucci</h1>
+  <p  class="desc">New Expensive Jacket from louis vuitton</p>
  
   <p class="price">319.99</p>
  
-  <button class="add-to">Add to Cart</button>
+  <button class="add" onclick="buttonClick()">Add to Cart</button>
 </div>
 </div>
 <div class="col-md-3"><div class="card">
-  <img src="gs6.jpg" style="width:100% ;" class="img-fluid sho" >
-  <h1 class="cn" >Tshirt Gucci</h1>
-  <p style="color: rgb(128, 127, 127);">New Expensive Jacket from <br> Gucci</p>
+  <img src="gs6.jpg" style="width:100% ;" class="card-img-top img-card" >
+  <h1 class="card-title title text-white" >Tshirt Gucci</h1>
+  <p  class="desc">New Expensive Jacket from <br> Gucci</p>
  
   <p class="price">$724.99</p>
  
- <button class="add-to">Add to Cart</button>
+ <button class="add" onclick="buttonClick()">Add to Cart</button>
 </div>
 </div>    <div class="col-md-3"><div class="card">
   <img src="stou.jpg" alt="kach" style="width:99%" class="img-fluid sho sho" style="margin-left: 10px;">
-  <h1 class="cn">Packet</h1>
-  <p style="color: rgb(128, 127, 127);">New Expensive Jacket from Versace</p>
+  <h1 class="card-title title text-white">Packet</h1>
+  <p  class="desc">New Expensive Jacket from Versace</p>
  
   <p class="price">$399.99</p>
  
- <button class="add-to">Add to Cart</button>
+ <button class="add" onclick="buttonClick()">Add to Cart</button>
 </div>
 </div>    <div class="col-md-3"><div class="card">
-  <img src="nos.jpg" alt="kach" style="width:100% ;" class="img-fluid sho" >
-  <h1 class="cn" >Gucci Shirt</h1>
-  <p style="color: rgb(128, 127, 127);">New Expensive Jacket from <br> Nike</p>
+  <img src="nos.jpg" alt="kach" style="width:100% ;" class="card-img-top img-card" >
+  <h1 class="card-title title text-white" >Gucci Shirt</h1>
+  <p  class="desc">New Expensive Jacket from <br> Nike</p>
  
   <p class="price">$929.86</p>
  
-<button class="add-to">Add to Cart</button>
+<button class="add" onclick="buttonClick()">Add to Cart</button>
 </div>
 </div>
 </div>
@@ -254,92 +292,88 @@
         <div class="container mt-5">
 <div class="row mt-5">
 <div class="col-md-3"><div class="card">
-  <img src="ver2.jpg" alt="kach" style="width: 100%;" id="vers" class="img-fluid sho" >
-  <h1 class="cn">Versace </h1>
-  <p style="color: rgb(128, 127, 127);">New Expensive Jacket from louis vuitton</p>
+  <img src="ver2.jpg" alt="kach" style="width: 100%;" id="vers" class="card-img-top img-card" >
+  <h1 class="card-title title text-white">Versace </h1>
+  <p  class="desc">New Expensive Jacket from louis vuitton</p>
  
   <p class="price">$319.99</p>
  
-  <button class="add-to">Add to Cart</button>
+  <button class="add" onclick="buttonClick()">Add to Cart</button>
 </div>
 </div>
 <div class="col-md-3"><div class="card">
-  <img src="vest2.jpg" alt="kach" style="width:100% ;"class="img-fluid sho"  >
-  <h1 class="cn">Jacket</h1>
-  <p style="color: rgb(128, 127, 127);">New Expensive Jacket from <br> Gucci</p>
+  <img src="vest2.jpg" alt="kach" style="width:100% ;"class="card-img-top img-card"  >
+  <h1 class="card-title title text-white">Jacket</h1>
+  <p  class="desc">New Expensive Jacket from <br> Gucci</p>
  
   <p class="price">$724.99</p>
  
- <button class="add-to">Add to Cart</button>
+ <button class="add" onclick="buttonClick()">Add to Cart</button>
 </div>
 </div>    <div class="col-md-3"><div class="card">
-  <img src="ver3.jpg" alt="kach"  style="width:99%" class="img-fluid sho" style="margin-left: 10px;" >
-  <h1 class="cn">Shoes</h1>
-  <p style="color: rgb(128, 127, 127);">New Expensive Jacket from Versace</p>
+  <img src="ver3.jpg" alt="kach"  style="width:99%" class="card-img-top img-card"  >
+  <h1 class="card-title title text-white">Shoes</h1>
+  <p s class="desc">New Expensive Jacket from Versace</p>
  
   <p class="price">$399.99</p>
  
- <button class="add-to">Add to Cart</button>
+ <button class="add" onclick="buttonClick()">Add to Cart</button>
  <script></script>
 </div>
 </div>    <div class="col-md-3"><div class="card">
-  <img src="vet1.jpg" alt="kach" width="100%" class="img-fluid sho" >
-  <h1 class="cn">Versace</h1>
-  <p style="color: rgb(128, 127, 127);">New Expensive Jacket from <br> Nike</p>
+  <img src="vet1.jpg" alt="kach" width="100%" class="card-img-top img-card" >
+  <h1 class="card-title title text-white">Versace</h1>
+  <p >New Expensive Jacket from <br> Nike</p>
  
   <p class="price">$929.86</p>
  
-<button class="add-to">Add to Cart</button>
+<button class="add" onclick="buttonClick()">Add to Cart</button>
 </div>
 </div>
 </div>
 </div>
-
-
-
-
-    </div>
-  </div>
+</div>
+</div>
 <br><br>
 
 <div class="container mt-5">
   <div class="row mt-5">
     <div class="col-md-3"><div class="card">
-      <img src="vl.jpg" alt="kach" style="width: 98%;" class="img-fluid sho">
-      <h1 class="cn">Louis vuitton</h1>
-      <p style="color: rgb(128, 127, 127);">New Expensive Jacket from louis vuitton</p>
+      <img src="vl.jpg" alt="kach" style="width: 98%;" class="card-img-top img-card">
+      <h1 class="card-title title text-white">Louis vuitton</h1>
+      <p class="desc">New Expensive Jacket from louis vuitton</p>
      
       <p class="price">$319.99</p>
      
-      <button class="add-to">Add to Cart</button>
+      <button class="add" onclick="buttonClick()">Add to Cart</button>
     </div>
     </div>
     <div class="col-md-3"><div class="card">
-      <img src="z1.jpg" alt="kach" style="width:100% ;" class="img-fluid sho" >
-      <h1 class="cn" >Gucci</h1>
-      <p style="color: rgb(128, 127, 127);">New Expensive Jacket from <br> Gucci</p>
+      <img src="z1.jpg" alt="kach" style="width:100% ;" class="card-img-top img-card" >
+      <h1 class="card-title title text-white" >Gucci</h1>
+      <p class="desc">New Expensive Jacket from <br> Gucci</p>
      
       <p class="price">$724.99</p>
      
-     <button class="add-to">Add to Cart</button>
+     <button class="add" onclick="buttonClick()">Add to Cart</button>
     </div>
     </div>    <div class="col-md-3"><div class="card">
-      <img src="versa.jpg" alt="kach" style="width:99%" class="img-fluid sho" style="margin-left: 10px;">
-      <h1 class="cn" >Versace</h1>
-      <p style="color: rgb(128, 127, 127);">New Expensive Jacket from Versace</p>
+      <img src="versa.jpg" alt="kach" style="width:99%" class="card-img-top img-card" >
+      <h1 class="card-title title text-white" >Versace</h1>
+      <p class="desc">New Expensive Jacket from Versace</p>
      
       <p class="price" >  $399.99</p>
      
-     <button class="add-to">Add to Cart</button>
+     <button class="add" onclick="buttonClick()">Add to Cart</button>
     </div>
     </div>    <div class="col-md-3"><div class="card">
-      <img src="af1.jpg" alt="kach" style="width:100% ;" class="img-fluid sho" >
-      <h1 class="cn">Nike</h1>
-      <p style="color: rgb(128, 127, 127);">New Expensive Jacket from <br> Nike</p>
+      <img src="af1.jpg" alt="kach" style="width:100% ;" class="card-img-top img-card" >
+      <h1 class="card-title title text-white">Nike</h1>
+      <p class="desc">New Expensive Jacket from <br> Nike</p>
      
       <p class="price">$929.86</p>
      
-<button class="add-to">Add to Cart</button>
+<button class="add" onclick="buttonClick()">Add to Cart</button>
     </div>
     </div>
 </div>
@@ -352,7 +386,7 @@
 <br><br><br><br>
 <br><br>
 
-<!------------------------------------------------temoiniage---------------------------------->
+<!------------------------------------------------New Arrivals---------------------------------->
 <section>
   <h2 id="h2" >New Arrivals</h2>
   <br><br><br><br>
@@ -362,40 +396,40 @@
     <div class="row mt-5">
       <div class="col-md-3"><div class="card">
         <img src="ilaa.jpg" alt="kach" style="width: 100%;" class="img-fluid">
-        <h1 class="cn">Trilla</h1>
-        <p style="color: rgb(128, 127, 127);">New Expensive Jacket from louis vuitton</p>
+        <h1 class="card-title title text-white">Trilla</h1>
+        <p class="desc">New Expensive Jacket from louis vuitton</p>
        
         <p class="price">$319.99</p>
        
-        <button class="add-to">Add to Cart</button>
+        <button class="add" onclick="buttonClick()">Add to Cart</button>
       </div>
       </div>
       <div class="col-md-3"><div class="card">
         <img src="mgk.jpg" alt="kach" style="width:100% ;" class="img-fluid" >
-        <h1 class="cn" >Mgk Jacket</h1>
-        <p style="color: rgb(128, 127, 127);">New Expensive Jacket from <br> Gucci</p>
+        <h1 class="card-title title text-white" >Mgk Jacket</h1>
+        <p class="desc">New Expensive Jacket from <br> Gucci</p>
        
         <p class="price">$724.99</p>
        
-       <button class="add-to">Add to Cart</button>
+       <button class="add" onclick="buttonClick()">Add to Cart</button>
       </div>
       </div>    <div class="col-md-3"><div class="card">
-        <img src="rich.jpg" alt="kach" style="width:100%" class="img-fluid" style="margin-left: 10px;">
-        <h1 class="cn" >Nike</h1>
-        <p style="color: rgb(128, 127, 127);">New Expensive Jacket from Versace</p>
+        <img src="rich.jpg" alt="kach" style="width:100%" class="img-fluid" >
+        <h1 class="card-title title text-white" >Nike</h1>
+        <p class="desc">New Expensive Jacket from Versace</p>
        
         <p class="price" >  $399.99</p>
        
-       <button class="add-to">Add to Cart</button>
+       <button class="add" onclick="buttonClick()">Add to Cart</button>
       </div>
       </div>    <div class="col-md-3"><div class="card">
         <img src="lvvvvvvvvvvvvvv.jpg" alt="kach" style="width:100% ;" class="img-fluid" >
-        <h1 class="cn">Louis Vuitton</h1>
-        <p style="color: rgb(128, 127, 127);">New Expensive Jacket from <br> Nike</p>
+        <h1 class="card-title title text-white">Louis Vuitton</h1>
+        <p class="desc">New Expensive Jacket from <br> Nike</p>
        
         <p class="price">$929.86</p>
        
-  <button class="add-to">Add to Cart</button>
+  <button class="add" onclick="buttonClick()">Add to Cart</button>
       </div>
       </div>
   </div>
@@ -407,7 +441,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 d-flex text-white text-center rounded-2 w-5">
-    <div   style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+    <div id="custom-section">
 
         <h1 class="text-center mt-2">Customize Your Product</h1> <br>
         <p class="mt-2">With us you can be own a rare clothes you can buy what you want <br> you can import a disgn and we can made a custom clothes to you we <br> are the only be people who do that the first people who make this happened with this new idea we have a big stars on all the domain <br> who buy from us and customize clothes from us welcome to all the peoples.  </p><br><br><br> <button class="west-2 text-center" style="width: 145px; display: flex;align-self: center;justify-content: center;border-radius: 2%;">import</button>
@@ -443,17 +477,17 @@
   <footer class="footer">
 <div class="container">
   <div class="row">
-    <div class="col-md-4">
-      <img src="LOGO5-removebg-preview.png" alt="logo" width="90px" class="img-fluid ms-5 bg-light mt-5">
-<br>
-<p class="text-white em-5 mt-3">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Voluptatem perferendis vol <br> uptate, explicabo velit culpa <br>nihil alias enim iure adipisci.  </p>
+    <div class="col-md-4 " >
+      <img src="LOGO5-removebg-preview.png" alt="logo" width="80px" class="img-fluid ms-5 bg-danger mt-5">
+<br><br>
+<p class="text-white  mt-3" style="margin-left: -45px;">  Louis vuitton &nbsp; - &nbsp; Nike &nbsp;- Versace &nbsp; - &nbsp; Gucci  <br> <br> Fendi &nbsp; - &nbsp; Prada &nbsp;- Bape &nbsp; - &nbsp; Dior &nbsp;-Adidas   </p>
     </div>
     <div class="col-md-4">
       <div class="container">
         <div class="row">
               <div class="span12">
               <div class="thumbnail center well well-small text-center">
-                      <h2 class="text-white mt-5">Newsletter</h2>
+                      <h2 class=" mt-5" style="color:#eeff00">Newsletter</h2>
                       
                       <p class="text-white mt-5"> Put your email adress if you get our news</p>
                       <form action="" method="post">
@@ -461,7 +495,7 @@
                               <input type="text" id="" name="" placeholder="your@email.com">
                           </div>
                           <br />
-                          <p class="text-white">Suscribe  Now!</p>
+                          <p style="color:#ff0000" >Suscribe  Now!</p>
                     </form>
                   </div>    
               </div>
@@ -470,22 +504,22 @@
     </div>
     <div class="col-md-4">
 
-      <h1 class="text-white text-center mt-5 ms-5" style="color: #ffffff;">Follow us </h1>
-      <div class="row ms-5" style="display:flex;justify-content: space-around;">
-        <div class="col-md-1 text-center mt-5 "><button type="button" class="btn btn-outline-info mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+      <h1 class="  text-center mt-5 ms-5" style="color:#eeff00">Follow us </h1>
+      <div class="row ms-3" style="display:flex;justify-content: space-evenly;">
+        <div class="col-md-1 text-center mt-5 "><button type="button" class="btn btn-outline-info mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
         </svg></i></button>
         
 
         </div>
         <div  class="col-md-1 text-center mt-5">
-          <button type="button" class="btn btn-outline-secondary mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <button type="button" class="btn btn-outline-secondary mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
           </svg></button>
           
         </div>
         <div class="col-md-1 text-center mt-5">
-          <button type="button" class="btn btn-outline-danger mb-0"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+          <button type="button" class="btn btn-outline-danger mb-0"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
             <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
           </svg></button>
           
@@ -497,11 +531,42 @@
     </div>
   </div>
 </div>
-<hr>
 
- 
-</footer>
+<p class="text-center text-white">©copy-right-Nassim-Khlifi</p>
+</footer >
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  
+
+   
   
   <script src="card.js"></script>
+
+  
 </body>
 </html>
