@@ -41,7 +41,12 @@ border: none;border-bottom:2px #eeff00 solid;background-color: transparent;
   }
 }
 
-
+.modal-body{
+  color: white;
+}
+.total{
+  float: right;
+}
 
 .vio{
   position: absolute;
